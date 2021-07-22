@@ -555,6 +555,17 @@ video {
   display: none;
 }
 
+button {
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+	--tw-rotate: 0;
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	--tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 label {
 	--tw-blur: var(--tw-empty,/*!*/ /*!*/);
 	--tw-brightness: var(--tw-empty,/*!*/ /*!*/);
@@ -609,6 +620,12 @@ main {
 	padding-right: 2rem;
 }
 
+label {
+	cursor: pointer;
+}
+
+/*Secciones*/
+
 .seccion {
 	margin-top: 5rem;
 }
@@ -618,13 +635,18 @@ main {
 	line-height: 1;
 }
 
+/*Generos*/
+
 .genero_options {
 	margin-top: 1.75rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
-label {
+input[name="genero"] {
+	display: none;
+}
+input[name="genero"] + label {
 	display: block;
 	height: 7.6rem;
 	width: 7.6rem;
@@ -642,35 +664,112 @@ label {
 	background-image: url('assets/bebe-mujer.svg');
 }
 
-input:checked + label{
+input[name="genero"]:checked + label{
     width: 11.4rem;
-    height: 11.4rem;
+    height: 11.4rem;  
+
     
 }
 
-input {
+
+/*Pais*/
+.pais_options {
+	margin-top: 1.75rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+input[name="pais"] {
 	display: none;
+}
+
+input[name="pais"] + label {
+	display: block;
+	height: 4.8rem;
+	width: 4.8rem;
+	background-size: cover;
+	filter: var(--tw-filter);
+}
+
+label[for="peru"] {
+	background-image: url('assets/banderas/Peru.svg');
+}
+label[for="francia"] {
+	background-image: url('assets/banderas/francia.svg');
+}
+label[for="alemania"] {
+	background-image: url('assets/banderas/alemania.svg');
+}
+
+input[name="pais"]:checked + label{
+    width: 7rem;
+    height: 7rem;  
 }
 
 
 
+/*Contidad*/
+.cantidad_options {
+	margin-top: 1.75rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+input[name="cantidad"] {
+	display: none;
+}
+
+input[name="cantidad"] + label {
+	border-radius: 1rem;
+	--tw-bg-opacity: 1;
+	background-color: rgba(104, 69, 113, var(--tw-bg-opacity));
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
+	padding-top: 0.5rem;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	--tw-text-opacity: 1;
+	color: rgba(245, 243, 255, var(--tw-text-opacity));
+}
+
+/* input[name="cantidad"] + label[for="todas"]{
+    @apply
+    bg-[#FF4B55]
+    text-red-50
+
+} */
+
+input[name="cantidad"]:checked + label {
+	--tw-bg-opacity: 1;
+	background-color: rgba(184, 0, 154, var(--tw-bg-opacity));
+}
+
+
+/*Footer*/
 footer {
 	margin-top: auto;
 	display: flex;
 	width: 100%;
 	max-width: 1024px;
 	justify-content: center;
+	padding-top: 2.5rem;
 }
 
-.generar_ideas {
-	--tw-bg-opacity: 1;
-	background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
-	--tw-bg-opacity: 1;
-	background-color: rgba(184, 0, 154, var(--tw-bg-opacity));
-	padding: 1.25rem;
-	padding-bottom: 0.5rem;
-	font-size: 3.75rem;
-	line-height: 1;
-	--tw-text-opacity: 1;
-	color: rgba(245, 243, 255, var(--tw-text-opacity));
+button{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    transform: var(--tw-transform);
+    --tw-bg-opacity: 1;
+    background-color: rgba(184, 0, 154, var(--tw-bg-opacity));
+    padding: 1.25rem;
+    padding-bottom: 0.5rem;
+    font-size: 3.75rem;
+    line-height: 1;
+    --tw-text-opacity: 1;
+    color: rgba(245, 243, 255, var(--tw-text-opacity));
+    transition-duration: 300ms; 
+}
+
+button:active {
+	--tw-translate-y: 0.25rem;
+	transform: var(--tw-transform);
 }

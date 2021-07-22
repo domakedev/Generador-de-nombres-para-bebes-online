@@ -50,8 +50,14 @@ main {
     bg-cloud
 
     px-8
-
 }
+
+label{
+    @apply
+    cursor-pointer
+}
+
+/*Secciones*/
 
 .seccion{
     @apply
@@ -63,14 +69,20 @@ main {
     text-center
 }
 
+/*Generos*/
+
 .genero_options{
     @apply
     flex
-    justify-between
+    justify-around
     mt-7
 }
 
-label{
+input[name="genero"]{
+    @apply
+    hidden
+}
+input[name="genero"] + label{
     @apply
     w-[7.6rem]
     h-[7.6rem]
@@ -86,27 +98,101 @@ label{
 }
 .label_genero_neutro{
     @apply
-    bg-bebe-neutro
-    
+    bg-bebe-neutro    
 }
 .label_genero_mujer{
     @apply
     bg-bebe-mujer
 }
 
-input:checked + label{
+input[name="genero"]:checked + label{
     width: 11.4rem;
-    height: 11.4rem;
+    height: 11.4rem;  
+
     
 }
 
-input{
+
+/*Pais*/
+.pais_options{
+    @apply
+    flex
+    justify-around
+    mt-7
+}
+
+input[name="pais"]{
     @apply
     hidden
 }
 
+input[name="pais"] + label{
+    @apply
+    w-[4.8rem]
+    h-[4.8rem]
+    block
+    bg-cover
+    filter
+}
+
+label[for="peru"]{
+    @apply
+    bg-peru
+
+}
+label[for="francia"]{
+    @apply
+    bg-francia
+}
+label[for="alemania"]{
+    @apply
+    bg-alemania
+}
+
+input[name="pais"]:checked + label{
+    width: 7rem;
+    height: 7rem;  
+}
 
 
+
+/*Contidad*/
+.cantidad_options{
+    @apply
+    flex
+    justify-around
+    mt-7
+}
+
+input[name="cantidad"]{
+    @apply
+    hidden
+}
+
+input[name="cantidad"] + label{
+    @apply
+    text-3xl
+    bg-[#684571]
+    px-7
+    pt-2
+    rounded-2xl
+    text-purple-50
+}
+
+/* input[name="cantidad"] + label[for="todas"]{
+    @apply
+    bg-[#FF4B55]
+    text-red-50
+
+} */
+
+input[name="cantidad"]:checked + label{
+    @apply
+    bg-[#B8009A]
+}
+
+
+/*Footer*/
 footer {
     @apply
     w-full
@@ -115,21 +201,27 @@ footer {
     mt-auto
     flex
     justify-center
+    pt-10
 }
 
-.generar_ideas{
-    @apply
-    bg-green-200
+button{
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
 
-.generar_ideas{
+button{
     @apply
     p-5
     pb-2
     text-6xl
     bg-[#B8009A]
     text-purple-50
+
+
+    transform
+    duration-300
+    active:translate-y-1
 }
+
 
 
 @tailwind utilities;
