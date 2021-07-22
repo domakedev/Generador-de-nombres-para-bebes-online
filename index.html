@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombres para bebes</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+
+    <!-- Fuente -- font-family: 'Zen Loop', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="header_img" src="assets/sky_night.svg" alt="">
+        <h1 class="header_title">Nombres para bebés <br> Q</h1>
+        <img class="header_img" src="assets/sky_day.svg" alt="">
+    </header>
+
+
+    <main>
+        <div class="seccion genero">
+            <h1 class="seccion_title">¿Cual es el género de tu bebé?</h1>
+            <div class="genero_options">
+                
+                
+                <input class="input_genero_hombre" type="radio" name="genero" id="hombre" value="hombre">
+                <label class="label_genero_hombre" for="hombre"></label>
+
+                <input type="radio" name="genero" id="neutro" value="neutro">
+                <label class="label_genero_neutro" for="neutro"></label>
+                
+
+                
+                <input type="radio" name="genero" id="mujer" value="mujer">
+                <label class="label_genero_mujer" for="mujer"></label>
+
+            </div>
+        </div>
+        <div class="seccion pais">
+            <h1 class="seccion_title">¿De que pais/origen deseas ideas?</h1>
+            <div class="pais_options">
+
+                <label for="peru"></label>
+                <input type="radio" name="pais" id="peru" value="peru">
+
+                <label for="francia"></label>
+                <input type="radio" name="pais" id="francia" value="francia">
+
+                <label for="alemania"></label>
+                <input type="radio" name="pais" id="alemania" value="alemania">
+
+            </div>
+        </div>
+        <div class="seccion cantidad">
+            <h1 class="seccion_title">¿Cuantas ideas deseas?</h1>
+            <div class="cantidad_options">
+
+                <label for="tres"></label>
+                <input type="radio" name="cantidad" id="tres" value="3">
+
+                <label for="cinco"></label>
+                <input type="radio" name="cantidad" id="cinco" value="5">
+
+                <label for="todas"></label>
+                <input type="radio" name="cantidad" id="todas" value="todas">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button class="generar_ideas ">Generar Ideas!⚙️</button>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "generador-de-nombres-para-bebes-online",
+  "version": "1.0.0",
+  "description": "Descubre nombres de diferentes partes del mundo y genero para tu bebé.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/tailwind.css -o public/css/styles.css",
+    "dev": "postcss css/tailwind.css -o public/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domakedev/Generador-de-nombres-para-bebes-online.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domakedev/Generador-de-nombres-para-bebes-online/issues"
+  },
+  "homepage": "https://github.com/domakedev/Generador-de-nombres-para-bebes-online#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.5"
+  }
+}

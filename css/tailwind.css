@@ -1,0 +1,135 @@
+@tailwind base; 
+@tailwind components; 
+
+html{
+    font-size: 62.5%
+}
+
+body{
+    @apply
+    flex
+    flex-col
+    items-center
+    h-screen
+    tracking-widest
+    font-Zen
+
+
+}
+
+header {
+    @apply
+    w-full
+    max-w-screen-lg
+
+
+    flex
+    justify-between
+}
+
+.header_img{
+    @apply
+    h-28
+}
+
+.header_title{
+    @apply
+    text-center
+    mt-2.5
+    text-6xl
+
+    
+}
+main {
+    @apply
+    w-full
+    max-w-screen-lg
+    flex
+    flex-col
+    gap-1
+    bg-cloud
+
+    px-8
+
+}
+
+.seccion{
+    @apply
+    mt-20
+}
+.seccion_title{
+    @apply
+    text-5xl
+    text-center
+}
+
+.genero_options{
+    @apply
+    flex
+    justify-between
+    mt-7
+}
+
+label{
+    @apply
+    w-[7.6rem]
+    h-[7.6rem]
+    block
+    bg-cover
+    filter
+     
+}
+
+.label_genero_hombre{
+    @apply
+    bg-bebe-hombre
+}
+.label_genero_neutro{
+    @apply
+    bg-bebe-neutro
+    
+}
+.label_genero_mujer{
+    @apply
+    bg-bebe-mujer
+}
+
+input:checked + label{
+    width: 11.4rem;
+    height: 11.4rem;
+    
+}
+
+input{
+    @apply
+    hidden
+}
+
+
+
+footer {
+    @apply
+    w-full
+    max-w-screen-lg
+
+    mt-auto
+    flex
+    justify-center
+}
+
+.generar_ideas{
+    @apply
+    bg-green-200
+}
+
+.generar_ideas{
+    @apply
+    p-5
+    pb-2
+    text-6xl
+    bg-[#B8009A]
+    text-purple-50
+}
+
+
+@tailwind utilities;
