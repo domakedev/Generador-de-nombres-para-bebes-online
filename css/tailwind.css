@@ -37,6 +37,7 @@ header {
     text-center
     mt-2.5
     text-6xl
+    font-bold
 
     
 }
@@ -111,6 +112,12 @@ input[name="genero"]:checked + label{
 
     
 }
+input[name="genero"]:checked + label:after{
+    content:"👇";
+
+    @apply
+    text-4xl  
+}
 
 
 /*Pais*/
@@ -154,6 +161,14 @@ input[name="pais"]:checked + label{
     height: 7rem;  
 }
 
+input[name="pais"]:checked + label:after{
+    content:"👇";
+
+    @apply
+    text-4xl
+
+}
+
 
 
 /*Contidad*/
@@ -191,6 +206,10 @@ input[name="cantidad"]:checked + label{
     bg-[#B8009A]
 }
 
+input[name="cantidad"]:checked + label:after{
+    content: "💡";
+        
+}
 
 /*Footer*/
 footer {

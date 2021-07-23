@@ -608,6 +608,7 @@ header {
 	text-align: center;
 	font-size: 3.75rem;
 	line-height: 1;
+	font-weight: 700;
 }
 main {
 	display: flex;
@@ -670,6 +671,10 @@ input[name="genero"]:checked + label{
 
     
 }
+input[name="genero"]:checked + label:after{
+    content:"👇";
+    font-size: 2.25rem;
+    line-height: 2.5rem}
 
 
 /*Pais*/
@@ -705,6 +710,11 @@ input[name="pais"]:checked + label{
     width: 7rem;
     height: 7rem;  
 }
+
+input[name="pais"]:checked + label:after{
+    content:"👇";
+    font-size: 2.25rem;
+    line-height: 2.5rem}
 
 
 
@@ -744,6 +754,10 @@ input[name="cantidad"]:checked + label {
 	background-color: rgba(184, 0, 154, var(--tw-bg-opacity));
 }
 
+input[name="cantidad"]:checked + label:after{
+    content: "💡";
+        
+}
 
 /*Footer*/
 footer {
