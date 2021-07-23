@@ -280,6 +280,11 @@ button.open-modal{
   position: relative;
   width: 90%;
   max-width: 800px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  @apply
+  bg-[#FFFDF4]
 }
 
 .modal-dialog > * {
@@ -307,7 +312,6 @@ button.open-modal{
     text-4xl
 
     rounded-3xl
-    bg-yellow-100
 
     w-[30%]
 
@@ -356,7 +360,21 @@ button.open-modal{
 
 
 .close-modal {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  color:red;
+
+  @apply
+  absolute
+  top-[-10px]
+  right-[-10px]
+  p-0
+  px-4
+  pt-1
+  bg-red-50
+  rounded-full
+  font-bold
+  border-red-500
+  ring-2
 }
 
 .nube-modal{
@@ -378,6 +396,168 @@ button.open-modal{
     bg-cover
     bg-center
 }
+.nube-modal-2{
+
+    @apply
+    absolute
+    top-[-20px]
+    right-[-25px]
+    w-[5.2rem]
+    h-[3.2rem]
+    bg-cover
+    bg-center
+}
+.nube-modal-3{
+
+    @apply
+    absolute
+    top-[50%]
+    left-[-20px]
+    w-[4.9rem]
+    h-[3rem]
+    bg-cover
+    bg-center
+}
+.nube-modal-4{
+
+    @apply
+    absolute
+    top-[30%]
+    right-[-25px]
+    w-[6.6rem]
+    h-[4.1rem]
+    bg-cover
+    bg-center
+}
+.nube-modal-5{
+
+    @apply
+    absolute
+    bottom-[-10px]
+    left-[-20px]
+    w-[5.3rem]
+    h-[3.2rem]
+    bg-cover
+    bg-center
+}
+.nube-modal-6{
+
+    @apply
+    absolute
+    bottom-[-14px]
+    right-[-14px]
+    w-[7.6rem]
+    h-[4.8rem]
+    bg-cover
+    bg-center
+}
+
+.corazon-modal{
+    box-sizing: border-box;
+    @apply
+    bg-corazon
+    absolute
+    bg-cover
+    bg-center
+    p-0
+    
+}
+
+.corazon-modal-1{
+    @apply
+    top-[25%]
+    left-[10%]
+    w-[40px]
+    h-[40px]   
+
+}
+.corazon-modal-2{
+    @apply
+    top-[55%]
+    left-[10%]
+    w-[18px]
+    h-[18px]   
+}
+.corazon-modal-3{
+    @apply
+    top-[80%]
+    left-[10%]
+    w-[30px]
+    h-[30px]   
+}
+.corazon-modal-4{
+    @apply
+    top-[5%]
+    left-[48%]
+    w-[16px]
+    h-[16px]   
+}
+.corazon-modal-5{
+    @apply
+    top-[20%]
+    right-[10%]
+    w-[22px]
+    h-[22px]   
+}
+.corazon-modal-6{
+    @apply
+    top-[55%]
+    right-[10%]
+    w-[35px]
+    h-[35px]   
+}
+.corazon-modal-7{
+    @apply
+    top-[80%]
+    right-[10%]
+    w-[23px]
+    h-[23px]   
+}
+
+.ciguena-modal{
+    box-sizing: border-box;
+    @apply
+    bg-ciguena
+    absolute
+    bg-cover
+    bg-center
+    p-0
+
+    bottom-[-20%]
+    left-[26%]
+    w-[173px]
+    h-[138px]   
+
+}
+
+.bandera-modal{
+    box-sizing: border-box;
+
+    @apply
+
+    absolute
+    bg-cover
+    bg-center
+    p-0
+    top-[4%]
+    left-[45%]
+    w-[50px]
+    h-[61px] 
+}
+
+.bandera-modal-peru{
+    @apply     
+    bg-peru
+}
+.bandera-modal-france{
+    @apply     
+    bg-francia
+}
+.bandera-modal-germany{
+    @apply     
+    bg-alemania
+}
+
 
 
 

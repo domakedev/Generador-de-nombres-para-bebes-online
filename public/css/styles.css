@@ -566,6 +566,16 @@ video {
 	--tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.close-modal {
+	--tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+	--tw-ring-offset-width: 0px;
+	--tw-ring-offset-color: #fff;
+	--tw-ring-color: rgba(59, 130, 246, 0.5);
+	--tw-ring-offset-shadow: 0 0 #0000;
+	--tw-ring-shadow: 0 0 #0000;
+	--tw-shadow: 0 0 #0000;
+}
+
 label {
 	--tw-blur: var(--tw-empty,/*!*/ /*!*/);
 	--tw-brightness: var(--tw-empty,/*!*/ /*!*/);
@@ -827,7 +837,10 @@ button.open-modal:active {
   position: relative;
   width: 90%;
   max-width: 800px;
-}
+  padding-top: 80px;
+  padding-bottom: 30px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 253, 244, var(--tw-bg-opacity))}
 
 .modal-dialog > * {
   padding: 1rem;
@@ -851,8 +864,6 @@ button.open-modal:active {
     overflow-x: hidden;
     overflow-y: scroll;
     border-radius: 1.5rem;
-    --tw-bg-opacity: 1;
-    background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
     text-align: center;
     font-size: 2.25rem;
     line-height: 2.5rem}
@@ -897,8 +908,24 @@ button.open-modal:active {
 
 
 .close-modal {
-  font-size: 1.5rem;
-}
+  font-size: 2.5rem;
+  color:red;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 9999px;
+  --tw-border-opacity: 1;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+  padding: 0px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  font-weight: 700;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
 
 .nube-modal {
 	height: 1.25rem;
@@ -914,4 +941,133 @@ button.open-modal:active {
 	width: 7.6rem;
 	background-size: cover;
 	background-position: center;
+}
+.nube-modal-2 {
+	position: absolute;
+	top: -20px;
+	right: -25px;
+	height: 3.2rem;
+	width: 5.2rem;
+	background-size: cover;
+	background-position: center;
+}
+.nube-modal-3 {
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	height: 3rem;
+	width: 4.9rem;
+	background-size: cover;
+	background-position: center;
+}
+.nube-modal-4 {
+	position: absolute;
+	top: 30%;
+	right: -25px;
+	height: 4.1rem;
+	width: 6.6rem;
+	background-size: cover;
+	background-position: center;
+}
+.nube-modal-5 {
+	position: absolute;
+	bottom: -10px;
+	left: -20px;
+	height: 3.2rem;
+	width: 5.3rem;
+	background-size: cover;
+	background-position: center;
+}
+.nube-modal-6 {
+	position: absolute;
+	bottom: -14px;
+	right: -14px;
+	height: 4.8rem;
+	width: 7.6rem;
+	background-size: cover;
+	background-position: center;
+}
+
+.corazon-modal{
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url('assets/corazon.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 0px}
+
+.corazon-modal-1 {
+	top: 25%;
+	left: 10%;
+	height: 40px;
+	width: 40px;
+}
+.corazon-modal-2 {
+	top: 55%;
+	left: 10%;
+	height: 18px;
+	width: 18px;
+}
+.corazon-modal-3 {
+	top: 80%;
+	left: 10%;
+	height: 30px;
+	width: 30px;
+}
+.corazon-modal-4 {
+	top: 5%;
+	left: 48%;
+	height: 16px;
+	width: 16px;
+}
+.corazon-modal-5 {
+	top: 20%;
+	right: 10%;
+	height: 22px;
+	width: 22px;
+}
+.corazon-modal-6 {
+	top: 55%;
+	right: 10%;
+	height: 35px;
+	width: 35px;
+}
+.corazon-modal-7 {
+	top: 80%;
+	right: 10%;
+	height: 23px;
+	width: 23px;
+}
+
+.ciguena-modal{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -20%;
+    left: 26%;
+    height: 138px;
+    width: 173px;
+    background-image: url('assets/ciguena.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 0px}
+
+.bandera-modal{
+    box-sizing: border-box;
+    position: absolute;
+    top: 4%;
+    left: 45%;
+    height: 61px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    padding: 0px}
+
+.bandera-modal-peru {
+	background-image: url('assets/banderas/Peru.svg');
+}
+.bandera-modal-france {
+	background-image: url('assets/banderas/francia.svg');
+}
+.bandera-modal-germany {
+	background-image: url('assets/banderas/alemania.svg');
 }

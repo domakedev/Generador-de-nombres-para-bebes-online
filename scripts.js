@@ -42,7 +42,7 @@ openEls.addEventListener("click", function () {
             }
             //Imprime los nombres filtrados por pais y por genero MALE
             console.log(nombresFiltrados);
-            imprimirNombres(nombresFiltrados)
+            imprimirNombres(nombresFiltrados, genero, pais)
 
 
 
@@ -59,7 +59,7 @@ openEls.addEventListener("click", function () {
             }
             //Imprime los nombres filtrados por pais y por genero FEMALE
             console.log(nombresFiltrados);
-            imprimirNombres(nombresFiltrados)
+            imprimirNombres(nombresFiltrados, genero, pais)
 
           } else if (genero == "neutro") {
             if (cantidad == "todas") {
@@ -83,7 +83,7 @@ openEls.addEventListener("click", function () {
             }
             //Imprime los nombres filtrados por pais y por genero Neutro
             console.log(nombresFiltrados);
-            imprimirNombres(nombresFiltrados)
+            imprimirNombres(nombresFiltrados, genero, pais)
 
           }
         }
@@ -129,16 +129,49 @@ document.addEventListener("keyup", (e) => {
 
 //Funciones
 
-function imprimirNombres(arrayNames){
+function imprimirNombres(arrayNames, genero, pais){
+
+    console.log(genero);
     let namesBox = document.querySelector(".modal-content-principal")
+    let banderaModal = document.querySelector(".bandera-modal")
     //console.log("printing");
+
+    //Estilos segun pais
+    if (pais == "Peru") {
+      banderaModal.classList=""
+      banderaModal.classList.add("bandera-modal")
+      banderaModal.classList.add("bandera-modal-peru")
+    }
+    if (pais == "France") {
+      banderaModal.classList=""
+      banderaModal.classList.add("bandera-modal")
+      banderaModal.classList.add("bandera-modal-france")
+    }
+    if (pais == "Germany") {
+      banderaModal.classList=""
+      banderaModal.classList.add("bandera-modal")
+      banderaModal.classList.add("bandera-modal-germany")
+    }
+
+    //Estilos segun genero
+    namesBox.style.color = "#fff";
+    if (genero == "male") {
+      namesBox.style.backgroundColor = "#73CFD9";
+
+    } else if (genero =="female"){
+      namesBox.style.backgroundColor = "#FA909A";
+
+    } else if (genero =="neutro"){
+      namesBox.style.backgroundColor = "#FFCE7C";
+
+    }
 
     namesBox.innerHTML = "";
 
     let ul = document.createElement("ul");
 
     arrayNames.forEach(element => {
-        console.log(element);
+        //console.log(element);
         let li = document.createElement("li");
         li.innerText = element
 

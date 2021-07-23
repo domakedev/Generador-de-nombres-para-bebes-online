@@ -20,7 +20,9 @@ module.exports = {
         'peru': "url('assets/banderas/Peru.svg')",
         'francia': "url('assets/banderas/francia.svg')",
         'alemania': "url('assets/banderas/alemania.svg')",
-        'nube-modal': "url('assets/nube-modal.svg')"
+        'nube-modal': "url('assets/nube-modal.svg')",
+        'corazon': "url('assets/corazon.svg')",
+        'ciguena': "url('assets/ciguena.svg')"
        })
     },
   },
