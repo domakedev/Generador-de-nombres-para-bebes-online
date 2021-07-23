@@ -273,17 +273,85 @@ button.open-modal{
 }
 
 .modal-dialog {
-  position: relative;
-  max-width: 800px;
-  max-height: 80vh;
   border-radius: 5px;
   background: white;
-  overflow: auto;
   cursor: default;
+
+  position: relative;
+  width: 90%;
+  max-width: 800px;
 }
 
 .modal-dialog > * {
   padding: 1rem;
+ 
+}
+
+.modal-content{
+    @apply
+    text-3xl
+    flex
+    justify-center
+
+}
+
+.modal-content-principal{
+    height: 80%;
+    max-height: 300px;
+    margin-bottom: 30px;
+    @apply
+
+    flex
+    justify-center
+    text-center
+    text-4xl
+
+    rounded-3xl
+    bg-yellow-100
+
+    w-[30%]
+
+    overflow-y-scroll
+    overflow-x-hidden
+}
+
+/*Estilos-scrollbar*/
+.modal-content-principal::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.modal-content-principal::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.modal-content-principal::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.modal-content-principal::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.modal-content-principal::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.modal-content-principal::-webkit-scrollbar-track:hover,
+.modal-content-principal::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+.modal-content-principal ul li{
+    @apply
+    mt-4    
+    font-bold
 }
 
 
@@ -291,10 +359,28 @@ button.open-modal{
   font-size: 1.5rem;
 }
 
-.modal-content{
+.nube-modal{
     @apply
-    text-3xl
+    bg-nube-modal
+    h-5
+    w-auto
+
 }
+
+.nube-modal-1{
+
+    @apply
+    absolute
+    top-[-20px]
+    left-[-20px]
+    w-[7.6rem]
+    h-[4.8rem]
+    bg-cover
+    bg-center
+}
+
+
+
 
 
 
