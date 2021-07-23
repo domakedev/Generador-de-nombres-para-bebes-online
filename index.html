@@ -26,15 +26,15 @@
             <div class="genero_options">
                 
                 
-                <input  class="input_genero input_genero_hombre" type="radio" name="genero" id="hombre" value="hombre">
+                <input  class="input_genero input_genero_hombre" type="radio" name="genero" id="hombre" value="male">
                 <label class="label_genero_hombre" for="hombre"></label>
 
-                <input class="input_genero" type="radio" name="genero" id="neutro" value="neutro">
-                <label class="label_genero_neutro" for="neutro"></label>
+                <input class="input_genero" type="radio" name="genero" id="neutro" value="neutro" checked>
+                <label class="label_genero_neutro" for="neutro" ></label>
                 
 
                 
-                <input type="radio" class="input_genero" name="genero" id="mujer" value="mujer">
+                <input type="radio" class="input_genero" name="genero" id="mujer" value="female">
                 <label class="label_genero_mujer" for="mujer"></label>
 
             </div>
@@ -44,15 +44,15 @@
             <div class="pais_options">
 
                 
-                <input type="radio" name="pais" id="peru" value="peru">
+                <input type="radio" name="pais" id="peru" value="Peru">
                 <label for="peru"></label>
 
                 
-                <input type="radio" name="pais" id="francia" value="francia">
+                <input type="radio" name="pais" id="francia" value="France" checked>
                 <label for="francia"></label>
 
                 
-                <input type="radio" name="pais" id="alemania" value="alemania">
+                <input type="radio" name="pais" id="alemania" value="Germany">
                 <label for="alemania"></label>
 
             </div>
@@ -70,14 +70,37 @@
                 <label for="cinco">5</label>
 
                
-                <input type="radio" name="cantidad" id="todas" value="todas">
+                <input type="radio" name="cantidad" id="todas" value="todas" checked>
                 <label for="todas">TODAS</label>
 
             </div>
         </div>
     </main>
-    <footer>
+    <!-- <footer>
         <button class="generar_ideas ">Generar Ideas!⚙️</button>
+    </footer> -->
+
+    <!-- MODAL START -->
+    <footer>
+    <button type="button" class="open-modal" data-open="modal1">
+        Generar Ideas!⚙️
+      </button>
+  
+      <div class="modal" id="modal1">
+        <div class="modal-dialog">
+  
+          <button class="close-modal" aria-label="close modal" data-close>
+            ✕
+          </button>
+  
+          <section class="modal-content">
+              <div class="modal-content-principal"></div>
+          </section>
+          
+        </div>
+      </div>
     </footer>
+    <!-- MODAL END -->
+    <script src="scripts.js"></script>
 </body>
 </html>

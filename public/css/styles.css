@@ -555,7 +555,7 @@ video {
   display: none;
 }
 
-button {
+.open-modal {
 	--tw-translate-x: 0;
 	--tw-translate-y: 0;
 	--tw-rotate: 0;
@@ -690,7 +690,7 @@ input[name="pais"] {
 
 input[name="pais"] + label {
 	display: block;
-	height: 4.8rem;
+	height: 6.8rem;
 	width: 4.8rem;
 	background-size: cover;
 	filter: var(--tw-filter);
@@ -707,8 +707,8 @@ label[for="alemania"] {
 }
 
 input[name="pais"]:checked + label{
-    width: 7rem;
-    height: 7rem;  
+    width: 7.2rem;
+    height: 10.2rem;  
 }
 
 input[name="pais"]:checked + label:after{
@@ -770,20 +770,75 @@ footer {
 }
 
 button{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    transform: var(--tw-transform);
-    --tw-bg-opacity: 1;
-    background-color: rgba(184, 0, 154, var(--tw-bg-opacity));
-    padding: 1.25rem;
-    padding-bottom: 0.5rem;
-    font-size: 3.75rem;
-    line-height: 1;
-    --tw-text-opacity: 1;
-    color: rgba(245, 243, 255, var(--tw-text-opacity));
-    transition-duration: 300ms; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
 
-button:active {
+button.open-modal {
+	transform: var(--tw-transform);
+	--tw-bg-opacity: 1;
+	background-color: rgba(184, 0, 154, var(--tw-bg-opacity));
+	padding: 1.25rem;
+	padding-bottom: 0.5rem;
+	font-size: 3.75rem;
+	line-height: 1;
+	--tw-text-opacity: 1;
+	color: rgba(245, 243, 255, var(--tw-text-opacity));
+	transition-duration: 300ms;
+}
+
+button.open-modal:active {
 	--tw-translate-y: 0.25rem;
 	transform: var(--tw-transform);
+}
+
+/*Modal-css-puro*/
+
+
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 5px;
+  background: white;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+
+.close-modal {
+  font-size: 1.5rem;
+}
+
+.modal-content {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
 }
