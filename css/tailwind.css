@@ -280,7 +280,7 @@ button.open-modal{
   position: relative;
   width: 90%;
   max-width: 800px;
-  padding-top: 80px;
+  padding-top: 45px;
   padding-bottom: 30px;
 
   @apply
@@ -516,6 +516,7 @@ button.open-modal{
 
 .ciguena-modal{
     box-sizing: border-box;
+    left: calc(50% - 86px);
     @apply
     bg-ciguena
     absolute
@@ -524,7 +525,6 @@ button.open-modal{
     p-0
 
     bottom-[-20%]
-    left-[26%]
     w-[173px]
     h-[138px]   
 
@@ -532,15 +532,14 @@ button.open-modal{
 
 .bandera-modal{
     box-sizing: border-box;
+    margin: 0 auto;
 
     @apply
 
-    absolute
     bg-cover
     bg-center
     p-0
-    top-[4%]
-    left-[45%]
+    
     w-[50px]
     h-[61px] 
 }

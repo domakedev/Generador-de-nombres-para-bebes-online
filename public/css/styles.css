@@ -837,7 +837,7 @@ button.open-modal:active {
   position: relative;
   width: 90%;
   max-width: 800px;
-  padding-top: 80px;
+  padding-top: 45px;
   padding-bottom: 30px;
   --tw-bg-opacity: 1;
   background-color: rgba(255, 253, 244, var(--tw-bg-opacity))}
@@ -1041,9 +1041,9 @@ button.open-modal:active {
 
 .ciguena-modal{
     box-sizing: border-box;
+    left: calc(50% - 86px);
     position: absolute;
     bottom: -20%;
-    left: 26%;
     height: 138px;
     width: 173px;
     background-image: url('assets/ciguena.svg');
@@ -1053,9 +1053,7 @@ button.open-modal:active {
 
 .bandera-modal{
     box-sizing: border-box;
-    position: absolute;
-    top: 4%;
-    left: 45%;
+    margin: 0 auto;
     height: 61px;
     width: 50px;
     background-size: cover;
