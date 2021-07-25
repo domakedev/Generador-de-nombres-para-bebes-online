@@ -13,6 +13,8 @@ body{
     h-screen
     tracking-widest
     font-Zen
+    bg-cloud
+
 
 
 }
@@ -25,6 +27,8 @@ header {
 
     flex
     justify-between
+
+    
 }
 
 .header_img{
@@ -39,6 +43,8 @@ header {
     text-6xl
     font-bold
 
+    /*MD*/
+    md:text-8xl
     
 }
 main {
@@ -48,7 +54,6 @@ main {
     flex
     flex-col
     gap-1
-    bg-cloud
 
     px-8
 }
@@ -66,11 +71,16 @@ label{
 .seccion{
     @apply
     mt-20
+
+    md:mt-40
 }
 .seccion_title{
     @apply
     text-5xl
     text-center
+
+    /*MD*/
+    md:text-[4.8rem]
 }
 
 /*Generos*/
@@ -88,11 +98,15 @@ input[name="genero"]{
 }
 input[name="genero"] + label{
     @apply
-    w-[7.6rem]
-    h-[7.6rem]
+    w-[76px]
+    h-[76px]
     block
     bg-cover
     filter
+
+    /*MD*/
+    md:w-[150px]
+    md:h-[150px]
      
 }
 
@@ -113,7 +127,10 @@ input[name="genero"]:checked + label{
     width: 11.4rem;
     height: 11.4rem;  
 
-    
+    @apply
+    /*MD*/
+    md:w-[220px]
+    md:h-[220px]
 }
 input[name="genero"]:checked + label:after{
     content:"👇";
@@ -143,6 +160,10 @@ input[name="pais"] + label{
     block
     bg-cover
     filter
+
+    /*MD*/
+    md:w-[90px]
+    md:h-[120px]
 }
 
 label[for="peru"]{
@@ -162,6 +183,11 @@ label[for="alemania"]{
 input[name="pais"]:checked + label{
     width: 7.2rem;
     height: 10.2rem;  
+
+    @apply
+    /*MD*/
+    md:w-[135px]
+    md:h-[180px]
 }
 
 input[name="pais"]:checked + label:after{
@@ -195,6 +221,12 @@ input[name="cantidad"] + label{
     pt-2
     rounded-2xl
     text-purple-50
+
+    /*MD*/
+    md:text-[3rem]
+    md:px-12
+    md:pt-6
+    md:pb-5
 }
 
 /* input[name="cantidad"] + label[for="todas"]{
@@ -242,6 +274,10 @@ button.open-modal{
     transform
     duration-300
     active:translate-y-1
+
+    md:text-[6.4rem]
+    md:px-12
+    md:py-6
 }
 
 /*Modal-css-puro*/
@@ -298,6 +334,8 @@ button.open-modal{
     flex
     justify-center
 
+   
+
 }
 
 .modal-content-principal{
@@ -317,6 +355,8 @@ button.open-modal{
 
     overflow-y-scroll
     overflow-x-hidden
+
+    md:text-7xl
 }
 
 /*Estilos-scrollbar*/
@@ -528,6 +568,12 @@ button.open-modal{
     w-[173px]
     h-[138px]   
 
+    md:w-[380px]
+    md:h-[300px]
+    md:left-[210px]
+    md:bottom-[-40%]
+
+
 }
 
 .bandera-modal{
@@ -542,6 +588,9 @@ button.open-modal{
     
     w-[50px]
     h-[61px] 
+
+    md:w-[90px]
+    md:h-[120px]
 }
 
 .bandera-modal-peru{

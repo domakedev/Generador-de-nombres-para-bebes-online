@@ -598,6 +598,7 @@ body {
 	height: 100vh;
 	flex-direction: column;
 	align-items: center;
+	background-image: url('assets/Nubes-de-Fondo.svg');
 	font-family: Zen Loop, ui-serif;
 	letter-spacing: 0.1em;
 }
@@ -620,13 +621,20 @@ header {
 	line-height: 1;
 	font-weight: 700;
 }
+
+@media (min-width: 768px) {
+
+	.header_title {
+		font-size: 6rem;
+		line-height: 1;
+	}
+}
 main {
 	display: flex;
 	width: 100%;
 	max-width: 1024px;
 	flex-direction: column;
 	gap: 0.25rem;
-	background-image: url('assets/Nubes-de-Fondo.svg');
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
@@ -640,10 +648,23 @@ label{
 .seccion {
 	margin-top: 5rem;
 }
+
+@media (min-width: 768px) {
+
+	.seccion {
+		margin-top: 10rem;
+	}
+}
 .seccion_title {
 	text-align: center;
 	font-size: 3rem;
 	line-height: 1;
+}
+@media (min-width: 768px) {
+
+	.seccion_title {
+		font-size: 4.8rem;
+	}
 }
 
 /*Generos*/
@@ -659,10 +680,20 @@ input[name="genero"] {
 }
 input[name="genero"] + label {
 	display: block;
-	height: 7.6rem;
-	width: 7.6rem;
+	height: 76px;
+	width: 76px;
 	background-size: cover;
 	filter: var(--tw-filter);
+}
+@media (min-width: 768px) {
+
+	input[name="genero"] + label {
+		height: 150px;
+	}
+
+	input[name="genero"] + label {
+		width: 150px;
+	}
 }
 
 .label_genero_hombre {
@@ -677,9 +708,17 @@ input[name="genero"] + label {
 
 input[name="genero"]:checked + label{
     width: 11.4rem;
-    height: 11.4rem;  
+    height: 11.4rem}
 
-    
+@media (min-width: 768px) {
+
+	input[name="genero"]:checked + label {
+		height: 220px;
+	}
+
+	input[name="genero"]:checked + label {
+		width: 220px;
+	}
 }
 input[name="genero"]:checked + label:after{
     content:"👇";
@@ -706,6 +745,17 @@ input[name="pais"] + label {
 	filter: var(--tw-filter);
 }
 
+@media (min-width: 768px) {
+
+	input[name="pais"] + label {
+		height: 120px;
+	}
+
+	input[name="pais"] + label {
+		width: 90px;
+	}
+}
+
 label[for="peru"] {
 	background-image: url('assets/banderas/Peru.svg');
 }
@@ -718,7 +768,17 @@ label[for="alemania"] {
 
 input[name="pais"]:checked + label{
     width: 7.2rem;
-    height: 10.2rem;  
+    height: 10.2rem}
+
+@media (min-width: 768px) {
+
+	input[name="pais"]:checked + label {
+		height: 180px;
+	}
+
+	input[name="pais"]:checked + label {
+		width: 135px;
+	}
 }
 
 input[name="pais"]:checked + label:after{
@@ -750,6 +810,26 @@ input[name="cantidad"] + label {
 	line-height: 2.25rem;
 	--tw-text-opacity: 1;
 	color: rgba(245, 243, 255, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+
+	input[name="cantidad"] + label {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	input[name="cantidad"] + label {
+		padding-top: 1.5rem;
+	}
+
+	input[name="cantidad"] + label {
+		padding-bottom: 1.25rem;
+	}
+
+	input[name="cantidad"] + label {
+		font-size: 3rem;
+	}
 }
 
 /* input[name="cantidad"] + label[for="todas"]{
@@ -799,6 +879,23 @@ button.open-modal {
 button.open-modal:active {
 	--tw-translate-y: 0.25rem;
 	transform: var(--tw-transform);
+}
+
+@media (min-width: 768px) {
+
+	button.open-modal {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	button.open-modal {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	button.open-modal {
+		font-size: 6.4rem;
+	}
 }
 
 /*Modal-css-puro*/
@@ -867,6 +964,14 @@ button.open-modal:active {
     text-align: center;
     font-size: 2.25rem;
     line-height: 2.5rem}
+
+@media (min-width: 768px) {
+
+	.modal-content-principal {
+		font-size: 4.5rem;
+		line-height: 1;
+	}
+}
 
 /*Estilos-scrollbar*/
 .modal-content-principal::-webkit-scrollbar {
@@ -1051,6 +1156,25 @@ button.open-modal:active {
     background-position: center;
     padding: 0px}
 
+@media (min-width: 768px) {
+
+	.ciguena-modal {
+		left: 210px;
+	}
+
+	.ciguena-modal {
+		bottom: -40%;
+	}
+
+	.ciguena-modal {
+		height: 300px;
+	}
+
+	.ciguena-modal {
+		width: 380px;
+	}
+}
+
 .bandera-modal{
     box-sizing: border-box;
     margin: 0 auto;
@@ -1060,6 +1184,17 @@ button.open-modal:active {
     background-position: center;
     padding: 0px}
 
+@media (min-width: 768px) {
+
+	.bandera-modal {
+		height: 120px;
+	}
+
+	.bandera-modal {
+		width: 90px;
+	}
+}
+
 .bandera-modal-peru {
 	background-image: url('assets/banderas/Peru.svg');
 }
@@ -1068,4 +1203,16 @@ button.open-modal:active {
 }
 .bandera-modal-germany {
 	background-image: url('assets/banderas/alemania.svg');
+}
+
+
+
+
+
+
+
+
+
+.block {
+	display: block;
 }

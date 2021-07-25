@@ -1,80 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nombres para bebes</title>
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/styles.css" />
 
     <!-- Fuente -- font-family: 'Zen Loop', cursive; -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9WJSX7B7WC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9WJSX7B7WC");
+    </script>
+
+    
+  </head>
+  <body>
     <header>
-        <img class="header_img" src="assets/sky_night.svg" alt="">
-        <h1 class="header_title">Te damos ideas para el nombre de tu bebé <br> Q</h1>
-        <img class="header_img" src="assets/sky_day.svg" alt="">
+      <img class="header_img" src="assets/sky_night.svg" alt="" />
+      <h1 class="header_title">
+        Te damos ideas para el nombre de tu bebé <br />
+        Q
+      </h1>
+      <img class="header_img" src="assets/sky_day.svg" alt="" />
     </header>
 
-
     <main>
-        <div class="seccion genero">
-            <h1 class="seccion_title">¿Cual es el género de tu bebé?</h1>
-            <div class="genero_options">
-                
-                
-                <input  class="input_genero input_genero_hombre" type="radio" name="genero" id="hombre" value="male">
-                <label class="label_genero_hombre" for="hombre"></label>
+      <div class="seccion genero">
+        <h1 class="seccion_title">¿Cual es el género de tu bebé?</h1>
+        <div class="genero_options">
+          <input
+            class="input_genero input_genero_hombre"
+            type="radio"
+            name="genero"
+            id="hombre"
+            value="male"
+          />
+          <label class="label_genero_hombre" for="hombre"></label>
 
-                <input class="input_genero" type="radio" name="genero" id="neutro" value="neutro" checked>
-                <label class="label_genero_neutro" for="neutro" ></label>
-                
+          <input
+            class="input_genero"
+            type="radio"
+            name="genero"
+            id="neutro"
+            value="neutro"
+            checked
+          />
+          <label class="label_genero_neutro" for="neutro"></label>
 
-                
-                <input type="radio" class="input_genero" name="genero" id="mujer" value="female">
-                <label class="label_genero_mujer" for="mujer"></label>
-
-            </div>
+          <input
+            type="radio"
+            class="input_genero"
+            name="genero"
+            id="mujer"
+            value="female"
+          />
+          <label class="label_genero_mujer" for="mujer"></label>
         </div>
-        <div class="seccion pais">
-            <h1 class="seccion_title">¿De que pais/origen deseas ideas?</h1>
-            <div class="pais_options">
+      </div>
+      <div class="seccion pais">
+        <h1 class="seccion_title">¿De que pais/origen deseas ideas?</h1>
+        <div class="pais_options">
+          <input type="radio" name="pais" id="peru" value="Peru" />
+          <label for="peru"></label>
 
-                
-                <input type="radio" name="pais" id="peru" value="Peru">
-                <label for="peru"></label>
+          <input type="radio" name="pais" id="francia" value="France" checked />
+          <label for="francia"></label>
 
-                
-                <input type="radio" name="pais" id="francia" value="France" checked>
-                <label for="francia"></label>
-
-                
-                <input type="radio" name="pais" id="alemania" value="Germany">
-                <label for="alemania"></label>
-
-            </div>
+          <input type="radio" name="pais" id="alemania" value="Germany" />
+          <label for="alemania"></label>
         </div>
-        <div class="seccion cantidad">
-            <h1 class="seccion_title">¿Cuantas ideas deseas?</h1>
-            <div class="cantidad_options">
+      </div>
+      <div class="seccion cantidad">
+        <h1 class="seccion_title">¿Cuantas ideas deseas?</h1>
+        <div class="cantidad_options">
+          <input type="radio" name="cantidad" id="tres" value="3" />
+          <label for="tres">3</label>
 
-                <input type="radio" name="cantidad" id="tres" value="3">
-                <label for="tres">3</label>
-                
+          <input type="radio" name="cantidad" id="cinco" value="5" />
+          <label for="cinco">5</label>
 
-                
-                <input type="radio" name="cantidad" id="cinco" value="5">
-                <label for="cinco">5</label>
-
-               
-                <input type="radio" name="cantidad" id="todas" value="todas" checked>
-                <label for="todas">TODAS</label>
-
-            </div>
+          <input
+            type="radio"
+            name="cantidad"
+            id="todas"
+            value="todas"
+            checked
+          />
+          <label for="todas">TODAS</label>
         </div>
+      </div>
+
+      <div class="seccion">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1587638098879183"
+          crossorigin="anonymous"
+        ></script>
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1587638098879183"
+          data-ad-slot="4553926017"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
     </main>
     <!-- <footer>
         <button class="generar_ideas ">Generar Ideas!⚙️</button>
@@ -82,44 +133,61 @@
 
     <!-- MODAL START -->
     <footer>
-    <button type="button" class="open-modal" data-open="modal1">
+      <button type="button" class="open-modal" data-open="modal1">
         Generar Ideas!⚙️
       </button>
-  
+
       <div class="modal" id="modal1">
         <div class="modal-dialog">
-            <div class="nube-modal nube-modal-1"></div>
-            <div class="nube-modal nube-modal-2"></div>
-            <div class="nube-modal nube-modal-3"></div>
-            <div class="nube-modal nube-modal-4"></div>
-            <div class="nube-modal nube-modal-5"></div>
-            <div class="nube-modal nube-modal-6"></div>
+          <div class="nube-modal nube-modal-1"></div>
+          <div class="nube-modal nube-modal-2"></div>
+          <div class="nube-modal nube-modal-3"></div>
+          <div class="nube-modal nube-modal-4"></div>
+          <div class="nube-modal nube-modal-5"></div>
+          <div class="nube-modal nube-modal-6"></div>
 
-            <div class="corazon-modal corazon-modal-1"></div>
-            <div class="corazon-modal corazon-modal-2"></div>
-            <div class="corazon-modal corazon-modal-3"></div>
-            <div class="corazon-modal corazon-modal-4"></div>
-            <div class="corazon-modal corazon-modal-5"></div>
-            <div class="corazon-modal corazon-modal-6"></div>
-            <div class="corazon-modal corazon-modal-7"></div>
+          <div class="corazon-modal corazon-modal-1"></div>
+          <div class="corazon-modal corazon-modal-2"></div>
+          <div class="corazon-modal corazon-modal-3"></div>
+          <div class="corazon-modal corazon-modal-4"></div>
+          <div class="corazon-modal corazon-modal-5"></div>
+          <div class="corazon-modal corazon-modal-6"></div>
+          <div class="corazon-modal corazon-modal-7"></div>
 
+          <div class="bandera-modal"></div>
 
-            <div class="bandera-modal"></div>
-  
           <button class="close-modal" aria-label="close modal" data-close>
             ✕
           </button>
-  
-          <section class="modal-content">
-              <div class="modal-content-principal"></div>
-          </section>
-          
-          <div class="ciguena-modal"></div>
 
+          <section class="modal-content">
+            <div class="modal-content-principal"></div>
+          </section>
+
+          <div>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1587638098879183"
+              crossorigin="anonymous"
+            ></script>
+            <!-- Bebes modal -->
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-1587638098879183"
+              data-ad-slot="3652456627"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+          <div class="ciguena-modal"></div>
         </div>
       </div>
     </footer>
     <!-- MODAL END -->
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
