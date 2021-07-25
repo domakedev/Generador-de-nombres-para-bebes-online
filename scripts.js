@@ -41,7 +41,7 @@ openEls.addEventListener("click", function () {
               nombresFiltrados.push(e)
             }
             //Imprime los nombres filtrados por pais y por genero MALE
-            console.log(nombresFiltrados);
+            //console.log(nombresFiltrados);
             imprimirNombres(nombresFiltrados, genero, pais)
 
 
@@ -58,7 +58,7 @@ openEls.addEventListener("click", function () {
               nombresFiltrados.push(e)
             }
             //Imprime los nombres filtrados por pais y por genero FEMALE
-            console.log(nombresFiltrados);
+            //console.log(nombresFiltrados);
             imprimirNombres(nombresFiltrados, genero, pais)
 
           } else if (genero == "neutro") {
@@ -82,7 +82,7 @@ openEls.addEventListener("click", function () {
               nombresFiltrados.push(e)
             }
             //Imprime los nombres filtrados por pais y por genero Neutro
-            console.log(nombresFiltrados);
+            //console.log(nombresFiltrados);
             imprimirNombres(nombresFiltrados, genero, pais)
 
           }
@@ -131,7 +131,7 @@ document.addEventListener("keyup", (e) => {
 
 function imprimirNombres(arrayNames, genero, pais){
 
-    console.log(genero);
+    //console.log(genero);
     let namesBox = document.querySelector(".modal-content-principal")
     let banderaModal = document.querySelector(".bandera-modal")
     //console.log("printing");
